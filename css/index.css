@@ -2,7 +2,7 @@
 * @Author: xw
 * @Date:   2016-05-26 20:32:30
 * @Last Modified by:   xw
-* @Last Modified time: 2016-08-24 21:25:48
+* @Last Modified time: 2016-08-25 20:18:33
 */
 
 .banner604 {
@@ -32,6 +32,58 @@
   margin-left: 220px;
   margin-top: 12px;
   float: left;
+  position: relative;
+}
+
+.circle {
+  /*居中效果*/
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -66px;
+}
+
+.circle li {
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin-right: 2px;
+  border-radius: 9px;
+  text-align: center;
+  color: #fff;
+  background-color: #3E3E3E;
+  cursor: pointer;
+}
+
+.circle li.current {
+  background-color: #B61B1F;
+}
+
+.arrow-l,
+.arrow-r {
+  position: absolute;
+  width: 28px;
+  height: 62px;
+  top: 50%;
+  margin-top: -31px;
+  text-align: center;
+  color: #fff;
+  font: 500 18px/62px "宋体";
+  background: rgba(0, 0, 0, .2);
+}
+
+.arrow-l {
+  left: 0;
+}
+
+.arrow-r {
+  right: 0;
+}
+
+.arrow-l:hover,
+.arrow-r:hover {
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
 }
 
 .news {
@@ -42,3 +94,41 @@
   margin-top: 12px;
   /*background-color: purple;*/
 }
+
+.news .jd-news {
+  height: 200px;
+  border-bottom: 1px dashed #E4E4E4;
+}
+
+.jd-news .dt,
+.lifeservi .dt {
+  height: 43px;
+  font: 400 14px/43px "微软雅黑";
+  color: #666;
+  border-bottom: 1px dotted #E4E4E4;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.news .jd-news .dt h3 {
+  float: left;
+}
+
+.news .jd-news .dt a {
+  float: right;
+}
+
+.news .jd-news .dd {
+  padding: 8px 0 0 15px;
+}
+
+.news .jd-news .dd li {
+  line-height: 28px;
+}
+
+.news .jd-news .dd li span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.news .lifeservi {}
